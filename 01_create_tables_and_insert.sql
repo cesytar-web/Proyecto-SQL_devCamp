@@ -62,11 +62,11 @@ INSERT INTO Students (nombre, apellido, email) VALUES
 ('Sofia', 'Lopez', 'sofia.lopez@email.com'),
 ('Carlos', 'Perez', 'carlos.perez@email.com'),
 ('Maria', 'Diaz', 'maria.diaz@email.com');
-INSERT INTO Professors (nombre, apellido, email) VALUES
-('Juana', 'Ramos', 'juana.ramos@email.com'),
-('Laura', 'Saavedra', 'laura.saavedra@email.com'),
-('Mikel', 'Turin', 'mikela.turin@email.com'),
-('Carlos', 'Veneco', 'carlo1.veneco@email.com');
+INSERT INTO Professors (nombre, apellido) VALUES
+('Juana', 'Ramos'),
+('Laura', 'Saavedra'),
+('Mikel', 'Turin'),
+('Carlos', 'Veneco');
 
 ALTER TABLE Professors ADD COLUMN email VARCHAR(100);
 INSERT INTO Courses (nombre_curso) VALUES
@@ -91,4 +91,5 @@ INSERT INTO Grades (student_id, course_id, professor_id, nota) VALUES
 (4, 4, 2, 6.5),  -- Historia
 -- Estudiante 5
 (5, 4, 3, 9.0);  -- Historia
+SHOW COLUMNS FROM professors;
 
